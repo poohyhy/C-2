@@ -19,7 +19,7 @@ int main(void) {
     if (ch == '\n') { //개행이 입력되면, 즉 문자열을 다 입력했으면
       j = 0;
       while (input[i] != '\0') { //null문자가 나올때까지 문자 배열을 출력
-        printf("%c", input[i]);
+        printf("%c", input[i]); // 오답, putchar()를 사용하거나 printf("%s")를 사용했어야 했다. 물론 int i도 필요없었다.
         i++;
       }
       i = 0;
