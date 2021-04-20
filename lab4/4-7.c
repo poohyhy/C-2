@@ -3,16 +3,7 @@
 #define ELEMENTS	7
 #define NAMELEN		10
 
-int strcpy(char *dest, char *src)
-{
-	char *start = dest;
-	while(*src)
-		*dest++ = *src++;
-	*dest = 0;
-	return dest = start;
-}
-
-void sort(char v[], char tmp[])
+void sort(char *v[], char tmp[])
 {
 	for (int step = 0; step < ELEMENTS-1; step++) {
 		for(int i = 0; i < ELEMENTS-1-step; i++) {
@@ -38,7 +29,7 @@ int main(void)
 		printf("%s ", array[i]);
 	}
 
-	sort(array, tmp);
+	sort(*array, tmp);
 	
 	//정렬 후
 	for(int i = 0; i < ELEMENTS; i++) {
