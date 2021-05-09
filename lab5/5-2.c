@@ -15,7 +15,6 @@ int main(void)
 
 	int i;
 
-	// 
 	for(i = 0; i < 3; i++)
 		printf("%d %d %d\n", a[i][2-i], *a[i], *(*(a+i)+i));
 	putchar('\n');
